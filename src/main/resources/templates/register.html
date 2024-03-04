@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>飞信聊天</title>
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">-->
+    <!-- <link rel="stylesheet" href="../static/css/external/jquery_confirm.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/external/bootstrapValidator.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/register.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/css/external/fontcss/bootstrap.icons.css" >
+    <link rel="stylesheet" type="text/css" href="/css/external/bootstrap.min.css" >
+
+
+    <script src="/js/external/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/external/jquery.js"></script>
+    <script src="/js/external/jquery_confirm.min.js"></script>
+    <script src="/js/external/md5.min.js"></script>
+
+    <script src="/js/external/bootstrapValidator.js"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/external/bootstrap.min.css" > -->
+    <link rel="stylesheet" type="text/css" href="/css/external/fontcss/bootstrap.icons.css" >
+    <!-- Favicon -->
+    <!-- <link rel="stylesheet" href="../static/css/all_min.css"> -->
+    <!-- Quick CSS -->
+    <!-- <link rel="stylesheet" href="../static/css/quick-website.css" id="stylesheet"> -->
+
+
+
+    <!-- Core JS  -->
+    <!--<script src="assets/libs/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="/js/external/svg-injector.min.js"></script>
+    <!-- Quick JS -->
+    <script src="/js/external/quick-website.js"></script>
+
+
+
+</head>
+
+<body class="body-container" style="background-image: url('/images/zhucefeixin.jpg');">
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+        <div class="modal-content bg-dark-dark">
+            <div class="modal-body">
+                <!-- Text -->
+                <p class="text-sm text-white mb-3">
+                    We use cookies so that our themes work for you. By using our website, you agree to our use of cookies.
+                </p>
+                <!-- Buttons -->
+                <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main content -->
+<div>
+    <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center min-vh-100">
+            <div class="col-md-6 col-lg-5 col-xl-5 py-6 py-md-0" style="display: flex;width: 800px;height: 600px;">
+                <div class="d-flex shadow" 
+                style="
+                    flex-direction:column;
+                    width:300px;
+                    height: 600px;
+                    background-image: url('/images/fanhui.png');
+                    background-size:cover;
+                    text-align: center;
+                ">
+                    <small style="color: white;
+                        font-size: 28px;
+                        font-weight: 500;
+                        margin-top: 70px;
+                        ">已有账号?</small>
+                        <p style="color: white;margin-top: 10px;">有账号就登录吧，好久不见</p>
+                        <div style="margin-top: 120px;">
+                        <button id="backbutton" onclick="backLogin()"
+                                    class="btn hidden btn-outline-success btn-sm me-3 mb-2 mt-2"
+                                    style="    
+                                            background-color: rgba(255, 255, 255, 0.1);
+                                            width: 105px;
+                                            height: 36px;
+                                            border: 3px solid white;
+                                            border-radius: 20px;
+                                            color: white;
+                                            font-size: 17px;
+                                            line-height: 18px;
+                                            "
+                                    >返回登录</button>
+                            </div>
+                        </div>
+                    <div class="card shadow zindex-100 mb-0" style="background-color: rgba(255, 255, 255, 0.9)"> 
+                    <div class="card-body px-md-5 py-5" style="width: 500px;height: 600px; overflow: auto;">
+                        <div class="mb-5" style="text-align: center;">
+                            <h6 class="h3" style=" font-weight: 600;">注册</h6>
+                            <p style="color: gray;font-size: 18px;margin-top: 10px;"><i class="bi bi-send"></i>飞信聊天</p>
+                        </div>
+                        <span class="clearfix"></span>
+                        <form id="register-form" action="" >
+                            <div class="card-body" style="margin-top: -20px;">
+                                <div class="form-group mb-3">
+                                    <label   class="form-label" style="font-size: 15px;">用户名</label>
+                                    <input style="font-size: 13px; height: 40px;" class="form-control" id="username" name="username" placeholder="请输入用户名" required autofocus>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label   class="form-label" style=" font-size: 15px;">昵称</label>
+                                    <input style="font-size: 13px; height: 40px;" class="form-control" id="nickname" name="nickname" placeholder="请输入昵称">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label   class="form-label" style=" font-size: 15px;">手机号</label>
+                                    <input style="font-size: 13px; height: 40px;" class="form-control" id="tel" name="tel" placeholder="请输入昵称">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label   class="form-label" style="font-size: 15px;">密码</label>
+                                    <input style="font-size: 13px; height: 40px;" type="password" id="password1" name = "password1" class="form-control" placeholder="请输入密码" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label   class="form-label" style=" font-size: 15px;">确认密码</label>
+                                    <input style="font-size: 13px; height: 40px;" type="password" id="password2" name="password2" class="form-control" placeholder="确认密码" required>
+                                </div>
+                                <div id= "addImg" class="form-group">
+                                    <div style="width: 100% ;" >
+                                        <label   class="form-label" style="font-size: 15px;">头像</label>
+                                        <label for="image_head"> <i class="bi bi-plus-circle-fill"></i></label>
+                                        <input  style="font-size: 13px; height: 40px;"
+                                                type="file"
+                                                id="image_head"
+                                                name="image_head"
+                                                accept=".png,.jepg,.jpg"
+                                        />
+                                    </div>
+                                    <div>
+                                        <canvas id="cvs"></canvas>
+                                        <canvas id="clipCvs"></canvas>
+
+                                    </div> 
+                                    <div style="text-align: center;">
+                                    <button id="registerbutton" onclick="registerClick()"  class="btn chat-btn-color  text-light" 
+                                        style="width: 200px;
+                                            background-color: rgb(224, 174, 81);
+                                            border-radius: 20px;
+                                            border: 1px solid rgb(224, 174, 81);
+                                            height: 32px;
+                                            line-height: 16px;
+                                            font-size: 14px;
+                                    ">注册</button>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </form>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    // const input = document.querySelector("input");
+    // const preview = document.querySelector(".preview");
+
+
+    // input.style.opacity = 0;
+    // input.addEventListener("change", updateImageDisplay);
+    var formData = new FormData();
+
+    $(document).ready(function () {
+
+        dragable('cvs')
+
+        //此处为校验的核心代码
+        $("#register-form").bootstrapValidator({
+            message: 'This value is not valid',
+            // 表单框里右侧的icon
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            submitHandler: function (validator, form, submitButton) {
+                // 表单提交成功时会调用此方法
+                // validator: 表单验证实例对象
+                // form  jq对象  指定表单对象
+                // submitButton  jq对象  指定提交按钮的对象
+            },
+            fields: {
+                username: {
+                    message: '用户名验证失败',
+                    validators: {
+                        notEmpty: {     //不能为空
+                            message: '用户名不能为空'
+                        },
+                        remote: {   //后台验证，比如查询用户名是否存在
+                            url: '/checkUserName',
+                            message: '此用户名已存在'
+                        }
+                    }
+                },
+                nickname: {
+                    message: '昵称验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '昵称不能为空'
+                        }
+                    }
+                },
+                tel: {
+                    message: '电话号验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '电话号不能为空'
+                        },
+                        regexp: {   //正则验证
+                            regexp: /^1\d{10}$/,
+                            message: '请输入正确的电话号'
+                        },
+                        remote: {   //后台验证，比如查询用户名是否存在
+                            url: '/checkTel',
+                            message: '此手机号已注册，使用该手机号快速登录即可'
+                        }
+                    }
+                },
+                password1: {
+                    message: '密码验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '密码不能为空'
+                        },
+                        stringLength: {     //检测长度
+                            min: 4,
+                            max: 15,
+                            message: '用户名需要在4~15个字符'
+                        }
+
+                    }
+                },
+                password2: {
+                    message: '密码验证失败',
+                    validators: {
+                        notEmpty: {
+                            message: '密码不能为空'
+                        },
+                        identical: {    //与指定控件内容比较是否相同，比如两次密码不一致
+                            field: 'password1',//指定控件name
+                            message: '两次密码不一致'
+                        }
+
+                    }
+                },
+
+            }
+        });
+
+
+        $("#loginbutton").click(function () {
+            $.get("/login?username="+$("#username").val()+"&nickname="+$("#nickname").val()+"&password="+md5($("#password1").val()),function (data,textStatus,request) {
+                if(data.code == 0){
+                    var param = encodeURI($("#username").val())
+                    let token = request.getResponseHeader("token")
+                    window.localStorage.setItem($("#username").val()+"_token",token);
+                    window.location.href="chatroom?username="+param
+                }else {
+                    $.confirm({
+                        title: '登录失败',
+                        content: data.message,
+                        autoClose: 'cancelAction|3000',
+                        buttons: {
+                            cancelAction: {
+                                text: "确认",
+                                function () {
+                                }
+                            }
+                        }
+                    });
+
+                }
+
+
+
+            })
+
+
+    });
+
+        $("#image_head").css('opacity','0')
+        $("#image_head")[0].addEventListener("change",updateImageDisplay)
+
+    });
+
+    function updateImageDisplay() {
+        const curFiles = $("#image_head")[0].files;
+        //formData.set("file",curFiles[0])
+        var reader = new FileReader(); //创建文件读取对象
+        reader.readAsDataURL(curFiles[0]);
+        //监听文件读取结束后事件
+        reader.onloadend = function(e) {
+            onInit(e.target.result)
+        };
+
+
+
+
+    }
+
+
+
+
+
+
+    function backLogin() {
+
+        window.location.href="/"
+    }
+
+    function checkUserName() {
+        console.log($("#username").val())
+
+    }
+
+    function registerClick() {
+        var userData = {};
+        userData.userName = $("#username").val()
+        userData.nickName = $("#nickname").val()
+        userData.password = md5($("#password1").val())
+        userData.tel = $("#tel").val()
+        formData.set("userVOStr",JSON.stringify(userData));
+        if(orisrc != undefined && orisrc != null){
+            let file = dataURLtoFile(clipCvs.toDataURL('image/png'),"png")
+            formData.set("file",file)
+        }
+
+        $.ajax({
+            url: '/registerUser',
+            type: 'POST',
+            cache: false,
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: successCallback,
+            error: errorCallback,
+        })
+
+
+
+
+
+        $.get("/registerUser?username="+$("#username").val()+"&tel="+$("#tel").val()+"&nickname="+$("#nickname").val()+"&password="+md5($("#password1").val()),function (data) {
+            if(data.code == 0){
+                $.confirm({
+                    title: '注册成功',
+                    content: "欢迎"+$("#username").val()+"加入",
+                    autoClose: 'cancelAction|5000',
+                    buttons: {
+                        cancelAction: {
+                            text: "跳转首页",
+                            action:function () {
+                                window.location.href="/"
+                            }
+                        }
+                    }
+                });
+            }else {
+                $.confirm({
+                    title: '注册失败',
+                    content: data.message,
+                    autoClose: 'cancelAction|3000',
+                    buttons: {
+                        cancelAction: {
+                            text: "确认",
+                            function () {
+                            }
+                        }
+                    }
+                });
+
+            }
+
+
+
+        })
+    }
+
+
+    function successCallback(data) {
+
+        if(data.code == 0){
+            $.confirm({
+                title: '注册成功',
+                content: "欢迎"+$("#username").val()+"加入",
+                autoClose: 'cancelAction|5000',
+                buttons: {
+                    cancelAction: {
+                        text: "跳转首页",
+                        action:function () {
+                            window.location.href="/"
+                        }
+                    }
+                }
+            });
+        }else {
+            $.confirm({
+                title: '注册失败',
+                content: data.message,
+                autoClose: 'cancelAction|3000',
+                buttons: {
+                    cancelAction: {
+                        text: "确认",
+                        function () {
+                        }
+                    }
+                }
+            });
+
+        }
+
+    }
+
+    function errorCallback(err) {
+
+    }
+
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../static/js/image_canvas.js"></script>
+<script src="../static/js/drag.js"></script>
+</body>
+
+</html>
