@@ -5,8 +5,8 @@ import lombok.Data;
 
 /**
  * @Description TODO
- * @Author wk.
- * @Date 2023/9/7 23:56
+ * @Author
+ * @Date 2024/2/29 23:56
  */
 @Data
 public class BusinessResult<T> {

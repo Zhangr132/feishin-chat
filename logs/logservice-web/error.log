@@ -4476,3 +4476,5 @@ java.io.FileNotFoundException: C:\Users\Zhangr\Desktop\websocket-webrtc-chat-mas
 发生错误
 [2024/03/04 17:37:04927][ERROR][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onError(WebSocketServer.java:229)]
 发生错误
+[2024/03/05 09:24:56879][ERROR][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onError(WebSocketServer.java:229)]
+发生错误

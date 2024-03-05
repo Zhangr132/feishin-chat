@@ -8,6 +8,10 @@ import com.acme.chat.service.UserService;
 import com.acme.chat.utils.FileUtils;
 import com.acme.chat.vo.UserVO;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,13 +26,20 @@ import java.util.UUID;
 
 
 @Controller
+@Api("用户注册模块")
 public class RegisterController {
+	private Logger logger= LoggerFactory.getLogger(getClass());
 	@Autowired
 	UserService userService;
 
-	
+	/**
+	 * 用户名注册检验
+	 * @param username
+	 * @return
+	 */
 	@RequestMapping("/checkUserName")
 	@ResponseBody
+	@ApiOperation("用户名注册检验")
 	@PassToken
 	public Map checkUserName(String username){
 		User user = userService.getUserByName(username);
@@ -42,7 +53,13 @@ public class RegisterController {
 
 	}
 
+	/**
+	 * 电话注册检验
+	 * @param username
+	 * @return
+	 */
 	@RequestMapping("/checkTel")
+	@ApiOperation("电话注册检验")
 	@ResponseBody
 	@PassToken
 	public Map checkTel(String username){
@@ -73,7 +90,14 @@ public class RegisterController {
 //	}
 
 
+	/**
+	 * 用户注册
+	 * @param file
+	 * @param userVOStr
+	 * @return
+	 */
 	@RequestMapping("/registerUser")
+	@ApiOperation("用户注册")
 	@ResponseBody
 	@PassToken
 	public BusinessResult registerUser(@RequestParam(value = "file",required = false) MultipartFile file, @RequestParam String userVOStr){

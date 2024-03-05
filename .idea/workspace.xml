@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474e5309-9f47-4f68-a790-8c44e9c4a374" name="Changes" comment="1.更改登录、注册等页面样式&#10;2.修正提示框位置">
-      <change afterPath="$PROJECT_DIR$/sql/websocket_chatroom.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/all.sql" beforeDir="false" />
+    <list default="true" id="474e5309-9f47-4f68-a790-8c44e9c4a374" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logservice-web/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logservice-web/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logservice-web/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logservice-web/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/base/BusinessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/base/BusinessResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/denglu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/denglu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/fanhui.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/fanhui.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/zhucefeixin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhucefeixin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chatmain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chatmain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,27 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Zhangr/IDEA work space/websocket-feishin-chat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "68c24ba93c2ad75c7ea04d5f1f526bfa",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Zhangr/IDEA work space/websocket-feishin-chat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;68c24ba93c2ad75c7ea04d5f1f526bfa&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Zhangr\Desktop\websocket-webrtc-chat-master\src\main\resources\templates" />
@@ -98,7 +111,8 @@
       <workItem from="1709516685144" duration="2469000" />
       <workItem from="1709520896604" duration="31000" />
       <workItem from="1709520937412" duration="8913000" />
-      <workItem from="1709567447383" duration="325000" />
+      <workItem from="1709567447383" duration="1729000" />
+      <workItem from="1709600323871" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="1.更改登录、注册等页面样式&#10;2.修正提示框位置">
       <option name="closed" value="true" />
@@ -108,14 +122,34 @@
       <option name="project" value="LOCAL" />
       <updated>1709567634087</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修正数据库">
+      <option name="closed" value="true" />
+      <created>1709567793059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709567793059</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.更改登录、注册等页面样式&#10;2.修正提示框位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更改登录、注册等页面样式&#10;2.修正提示框位置" />
+    <MESSAGE value="修正数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

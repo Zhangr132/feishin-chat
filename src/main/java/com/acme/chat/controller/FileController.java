@@ -10,6 +10,9 @@ import com.acme.chat.service.UserService;
 import com.acme.chat.utils.FileUtils;
 import com.acme.chat.vo.UserVO;
 import com.alibaba.fastjson.JSON;
+import io.swagger.annotations.Api;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,7 +32,9 @@ import java.util.*;
 
 
 @Controller
+@Api("文件管理模块")
 public class FileController {
+	private Logger logger= LoggerFactory.getLogger(getClass());
 	@Autowired
 	UserService userService;
 
