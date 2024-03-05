@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474e5309-9f47-4f68-a790-8c44e9c4a374" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logservice-web/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logservice-web/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logservice-web/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logservice-web/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/base/BusinessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/base/BusinessResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/acme/chat/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/denglu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/denglu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/fanhui.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/fanhui.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/zhucefeixin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhucefeixin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chatmain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chatmain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/FileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/acme/chat/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="474e5309-9f47-4f68-a790-8c44e9c4a374" name="Changes" comment="修改图片样式" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +97,7 @@
       <workItem from="1709520896604" duration="31000" />
       <workItem from="1709520937412" duration="8913000" />
       <workItem from="1709567447383" duration="1729000" />
-      <workItem from="1709600323871" duration="3411000" />
+      <workItem from="1709600323871" duration="4179000" />
     </task>
     <task id="LOCAL-00001" summary="1.更改登录、注册等页面样式&#10;2.修正提示框位置">
       <option name="closed" value="true" />
@@ -130,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709567793059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改图片样式">
+      <option name="closed" value="true" />
+      <created>1709627194314</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709627194314</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.更改登录、注册等页面样式&#10;2.修正提示框位置" />
     <MESSAGE value="修正数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="修改图片样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改图片样式" />
   </component>
 </project>

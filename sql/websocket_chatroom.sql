@@ -1,5 +1,5 @@
 ﻿# Host: 127.0.0.1  (Version 5.7.23-log)
-# Date: 2024-03-04 23:54:34
+# Date: 2024-03-05 16:43:04
 # Generator: MySQL-Front 6.0  (Build 2.20)
 
 
@@ -12,18 +12,18 @@ CREATE TABLE `offmessage_record` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `from_user` varchar(50) NOT NULL DEFAULT '' COMMENT '发送者',
   `to_user` varchar(50) NOT NULL DEFAULT '' COMMENT '接收者',
-  `DATE` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '日期',
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '日期',
   `state` int(2) NOT NULL DEFAULT '0' COMMENT '状态',
   `content` varchar(255) NOT NULL DEFAULT '' COMMENT '内容',
   `content_type` varchar(30) NOT NULL DEFAULT '' COMMENT '信息类型',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 #
 # Data for table "offmessage_record"
 #
 
-INSERT INTO `offmessage_record` VALUES (1,'zhangr132','ff','2024-03-01 17:13:08',1,'1','text'),(7,'zhangr132','sun','2024-03-01 18:16:28',1,'??','text');
+INSERT INTO `offmessage_record` VALUES (1,'zhangr132','ff','2024-03-01 17:13:08',1,'1','text'),(8,'zhangr132','admin','2024-03-05 16:42:27',1,'发送','text');
 
 #
 # Structure for table "user"
