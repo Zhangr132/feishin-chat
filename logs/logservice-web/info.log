@@ -5087,3 +5087,496 @@ Started Application in 2.2818972 seconds (JVM running for 3.74)
 Shutting down ExecutorService 'applicationTaskExecutor'
 [2024/03/05 16:43:49616][INFO][LOGSERVICE][日志系统][com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1965)]
 {dataSource-0} closing ...
+[2024/03/05 17:54:51819][INFO][LOGSERVICE][日志系统][org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50)]
+Starting Application on LianXiang-R7000 with PID 20720 (started by Zhangr in D:\Zhangr\IDEA work space\websocket-feishin-chat)
+[2024/03/05 17:54:51841][INFO][LOGSERVICE][日志系统][org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:646)]
+No active profile set, falling back to default profiles: default
+[2024/03/05 17:54:52511][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90)]
+Tomcat initialized with port(s): 8089 (https)
+[2024/03/05 17:54:52521][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing ProtocolHandler ["https-jsse-nio-8089"]
+[2024/03/05 17:54:52529][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting service [Tomcat]
+[2024/03/05 17:54:52530][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting Servlet engine: [Apache Tomcat/9.0.21]
+[2024/03/05 17:54:52680][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing Spring embedded WebApplicationContext
+[2024/03/05 17:54:52681][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:283)]
+Root WebApplicationContext: initialization completed in 815 ms
+[2024/03/05 17:54:52992][INFO][LOGSERVICE][日志系统][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)]
+Initializing ExecutorService 'applicationTaskExecutor'
+[2024/03/05 17:54:53063][INFO][LOGSERVICE][日志系统][org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:58)]
+Adding welcome page template: index
+[2024/03/05 17:54:53149][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting ProtocolHandler ["https-jsse-nio-8089"]
+[2024/03/05 17:54:53970][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:202)]
+Tomcat started on port(s): 8089 (https) with context path ''
+[2024/03/05 17:54:53973][INFO][LOGSERVICE][日志系统][org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)]
+Started Application in 2.3494105 seconds (JVM running for 3.818)
+[2024/03/05 17:54:54101][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024/03/05 17:54:54101][INFO][LOGSERVICE][日志系统][org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]
+Initializing Servlet 'dispatcherServlet'
+[2024/03/05 17:54:54105][INFO][LOGSERVICE][日志系统][org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]
+Completed initialization in 4 ms
+[2024/03/05 17:55:32642][INFO][LOGSERVICE][日志系统][com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:1003)]
+{dataSource-1} inited
+[2024/03/05 17:55:32758][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:42)]
+正在进行密码登录
+[2024/03/05 17:55:32777][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:91)]
+正在进行主界面跳转
+[2024/03/05 17:55:32990][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.sendMessage(WebSocketServer.java:59)]
+发送数据：{
+	"content":[
+		{
+			"id":0,
+			"onLineState":true,
+			"picture":"64b69867-5375-4ae9-8615-4c92446546be.png",
+			"userName":"zhangr132"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"d2b8537e-581b-48f1-8001-35d75fa0da64.png",
+			"userName":"ff"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"mm"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"c09e50ad-2c7c-4a87-86b9-419d04619c55.png",
+			"userName":"bgz"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"adh"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"1234"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"5edfeaee-200f-4aa1-99ba-dadcdc3114f4.png",
+			"userName":"qf"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"6efe0c1c-4573-4b70-88d6-3e25ef268644.png",
+			"userName":"car"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"admin"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"fe39d57b-5a23-4066-8a22-55f7a8c08de8.png",
+			"userName":"zwj"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"8397ed5d-22f6-48fa-92f5-2e7d58dc17a1.png",
+			"userName":"sun"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"zbf"
+		}
+	],
+	"contentType":"onlineUsers",
+	"date":"2024-03-05 17:55:32",
+	"from":"server",
+	"to":"alluser"
+}
+[2024/03/05 17:55:32993][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onOpen(WebSocketServer.java:119)]
+zhangr132加入webSocket！当前人数为0
+[2024/03/05 17:55:36518][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.sendMessage(WebSocketServer.java:59)]
+发送数据：{
+	"content":[
+		{
+			"id":0,
+			"onLineState":true,
+			"picture":"64b69867-5375-4ae9-8615-4c92446546be.png",
+			"userName":"zhangr132"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"d2b8537e-581b-48f1-8001-35d75fa0da64.png",
+			"userName":"ff"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"mm"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"c09e50ad-2c7c-4a87-86b9-419d04619c55.png",
+			"userName":"bgz"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"adh"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"1234"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"5edfeaee-200f-4aa1-99ba-dadcdc3114f4.png",
+			"userName":"qf"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"6efe0c1c-4573-4b70-88d6-3e25ef268644.png",
+			"userName":"car"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"admin"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"fe39d57b-5a23-4066-8a22-55f7a8c08de8.png",
+			"userName":"zwj"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"8397ed5d-22f6-48fa-92f5-2e7d58dc17a1.png",
+			"userName":"sun"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"zbf"
+		}
+	],
+	"contentType":"onlineUsers",
+	"date":"2024-03-05 17:55:36",
+	"from":"server",
+	"to":"alluser"
+}
+[2024/03/05 17:55:36519][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onOpen(WebSocketServer.java:119)]
+zhangr132加入webSocket！当前人数为0
+[2024/03/05 17:58:38822][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:42)]
+正在进行密码登录
+[2024/03/05 17:58:38830][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:91)]
+正在进行主界面跳转
+[2024/03/05 17:58:38935][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.sendMessage(WebSocketServer.java:59)]
+发送数据：{
+	"content":[
+		{
+			"id":0,
+			"onLineState":true,
+			"picture":"64b69867-5375-4ae9-8615-4c92446546be.png",
+			"userName":"zhangr132"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"d2b8537e-581b-48f1-8001-35d75fa0da64.png",
+			"userName":"ff"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"mm"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"c09e50ad-2c7c-4a87-86b9-419d04619c55.png",
+			"userName":"bgz"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"adh"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"1234"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"5edfeaee-200f-4aa1-99ba-dadcdc3114f4.png",
+			"userName":"qf"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"6efe0c1c-4573-4b70-88d6-3e25ef268644.png",
+			"userName":"car"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"admin"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"fe39d57b-5a23-4066-8a22-55f7a8c08de8.png",
+			"userName":"zwj"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"8397ed5d-22f6-48fa-92f5-2e7d58dc17a1.png",
+			"userName":"sun"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"zbf"
+		}
+	],
+	"contentType":"onlineUsers",
+	"date":"2024-03-05 17:58:38",
+	"from":"server",
+	"to":"alluser"
+}
+[2024/03/05 17:58:38936][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onOpen(WebSocketServer.java:119)]
+zhangr132加入webSocket！当前人数为0
+[2024/03/05 19:34:52758][INFO][LOGSERVICE][日志系统][org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:50)]
+Starting Application on LianXiang-R7000 with PID 4436 (started by Zhangr in D:\Zhangr\IDEA work space\websocket-feishin-chat)
+[2024/03/05 19:34:52765][INFO][LOGSERVICE][日志系统][org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:646)]
+No active profile set, falling back to default profiles: default
+[2024/03/05 19:34:54132][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:90)]
+Tomcat initialized with port(s): 8089 (https)
+[2024/03/05 19:34:54144][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing ProtocolHandler ["https-jsse-nio-8089"]
+[2024/03/05 19:34:54154][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting service [Tomcat]
+[2024/03/05 19:34:54155][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting Servlet engine: [Apache Tomcat/9.0.21]
+[2024/03/05 19:34:54318][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing Spring embedded WebApplicationContext
+[2024/03/05 19:34:54318][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:283)]
+Root WebApplicationContext: initialization completed in 1420 ms
+[2024/03/05 19:34:54729][INFO][LOGSERVICE][日志系统][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:171)]
+Initializing ExecutorService 'applicationTaskExecutor'
+[2024/03/05 19:34:54826][INFO][LOGSERVICE][日志系统][org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>(WelcomePageHandlerMapping.java:58)]
+Adding welcome page template: index
+[2024/03/05 19:34:54952][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Starting ProtocolHandler ["https-jsse-nio-8089"]
+[2024/03/05 19:34:56011][INFO][LOGSERVICE][日志系统][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:202)]
+Tomcat started on port(s): 8089 (https) with context path ''
+[2024/03/05 19:34:56013][INFO][LOGSERVICE][日志系统][org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:59)]
+Started Application in 3.6216668 seconds (JVM running for 5.359)
+[2024/03/05 19:35:00883][INFO][LOGSERVICE][日志系统][org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173)]
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024/03/05 19:35:00884][INFO][LOGSERVICE][日志系统][org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:524)]
+Initializing Servlet 'dispatcherServlet'
+[2024/03/05 19:35:00888][INFO][LOGSERVICE][日志系统][org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:546)]
+Completed initialization in 4 ms
+[2024/03/05 19:46:23556][INFO][LOGSERVICE][日志系统][com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:1003)]
+{dataSource-1} inited
+[2024/03/05 19:46:23707][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:42)]
+正在进行密码登录
+[2024/03/05 19:46:23725][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:91)]
+正在进行主界面跳转
+[2024/03/05 19:46:23988][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.sendMessage(WebSocketServer.java:59)]
+发送数据：{
+	"content":[
+		{
+			"id":0,
+			"onLineState":true,
+			"picture":"64b69867-5375-4ae9-8615-4c92446546be.png",
+			"userName":"zhangr132"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"d2b8537e-581b-48f1-8001-35d75fa0da64.png",
+			"userName":"ff"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"mm"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"c09e50ad-2c7c-4a87-86b9-419d04619c55.png",
+			"userName":"bgz"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"adh"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"1234"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"5edfeaee-200f-4aa1-99ba-dadcdc3114f4.png",
+			"userName":"qf"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"6efe0c1c-4573-4b70-88d6-3e25ef268644.png",
+			"userName":"car"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"admin"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"fe39d57b-5a23-4066-8a22-55f7a8c08de8.png",
+			"userName":"zwj"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"8397ed5d-22f6-48fa-92f5-2e7d58dc17a1.png",
+			"userName":"sun"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"zbf"
+		}
+	],
+	"contentType":"onlineUsers",
+	"date":"2024-03-05 19:46:23",
+	"from":"server",
+	"to":"alluser"
+}
+[2024/03/05 19:46:23991][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onOpen(WebSocketServer.java:119)]
+zhangr132加入webSocket！当前人数为0
+[2024/03/05 19:46:29226][INFO][LOGSERVICE][日志系统][com.acme.chat.controller.LoginController.login(LoginController.java:91)]
+正在进行主界面跳转
+[2024/03/05 19:46:29316][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.sendMessage(WebSocketServer.java:59)]
+发送数据：{
+	"content":[
+		{
+			"id":0,
+			"onLineState":true,
+			"picture":"64b69867-5375-4ae9-8615-4c92446546be.png",
+			"userName":"zhangr132"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"d2b8537e-581b-48f1-8001-35d75fa0da64.png",
+			"userName":"ff"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"mm"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"c09e50ad-2c7c-4a87-86b9-419d04619c55.png",
+			"userName":"bgz"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"adh"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"1234"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"5edfeaee-200f-4aa1-99ba-dadcdc3114f4.png",
+			"userName":"qf"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"6efe0c1c-4573-4b70-88d6-3e25ef268644.png",
+			"userName":"car"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"userName":"admin"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"fe39d57b-5a23-4066-8a22-55f7a8c08de8.png",
+			"userName":"zwj"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"8397ed5d-22f6-48fa-92f5-2e7d58dc17a1.png",
+			"userName":"sun"
+		},
+		{
+			"id":0,
+			"onLineState":false,
+			"picture":"82979bce-e874-4ed5-a9fa-7a415d7b92eb.png",
+			"userName":"zbf"
+		}
+	],
+	"contentType":"onlineUsers",
+	"date":"2024-03-05 19:46:29",
+	"from":"server",
+	"to":"alluser"
+}
+[2024/03/05 19:46:29317][INFO][LOGSERVICE][日志系统][com.acme.chat.service.WebSocketServer.onOpen(WebSocketServer.java:119)]
+zhangr132加入webSocket！当前人数为0
+[2024/03/05 19:56:47112][INFO][LOGSERVICE][日志系统][org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:208)]
+Shutting down ExecutorService 'applicationTaskExecutor'
+[2024/03/05 19:56:47112][INFO][LOGSERVICE][日志系统][com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1965)]
+{dataSource-1} closing ...
+[2024/03/05 19:56:47115][INFO][LOGSERVICE][日志系统][com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:2037)]
+{dataSource-1} closed
